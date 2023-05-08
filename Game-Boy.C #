@@ -1,0 +1,293 @@
+//Roan Andrei D. Uson 
+//BSCPE 1-1
+//GAME BOY(Intalling games that required no wifi)
+
+using System;
+class HelloWorld {
+  static void Main() 
+  {
+    bool top = true; // bool is the key of THIS TYPE of loop
+    
+    
+    
+    Console.WriteLine("WELCOME TO GAME BOY");
+    while(top) // starting point of loop, Dito ulit mag loloop kung saan mo nilagay ang While
+    {
+    Console.WriteLine("");
+    Console.WriteLine("SELECT GAMES TO INSTALL");
+    Console.WriteLine("Action");
+    Console.WriteLine("RPG");
+    Console.WriteLine("Shooting");
+    Console.WriteLine("Press 0 to Close");
+    Console.WriteLine("");
+    string Gamer1 = Console.ReadLine();
+    
+    if(Gamer1.ToLower() == ("action") )
+    {
+     Console.WriteLine("Selection of Action Games");
+     Console.WriteLine("1. Mortal combat X");
+     Console.WriteLine("2. Marvel Vs Capcom");
+     Console.WriteLine("3. Ghostrider V.25");
+     Console.WriteLine("0. Back");
+     string Gamer1Mortal = Console.ReadLine();
+     if(Gamer1Mortal.ToLower() == "1")
+     {
+         Console.WriteLine("Are you sure you want to install Mortal combat X? yes or no?");
+         string Gamer2Mortal = Console.ReadLine();
+         if(Gamer2Mortal.ToLower() == "yes")
+         {
+             Console.WriteLine("");
+             Console.WriteLine("Installing... Please do not turn off device.");
+             top = false; // serve as a break sa loop, di na sya magloloop
+         }
+         else if (Gamer2Mortal.ToLower() == "no")
+         {
+             
+             continue; // Babalik sa while loop
+         }
+         else
+         {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+         } 
+         
+     }
+     else if(Gamer1Mortal.ToLower()== "2")
+     {
+         Console.WriteLine("Are you sure you want to install Marvel Vs Capcom? yes or no?");
+         string Gamer2Marvel = Console.ReadLine();
+         if(Gamer2Marvel.ToLower() == "yes")
+         {
+             Console.WriteLine("");
+             Console.WriteLine("Installing... Please do not turn off device.");
+             top = false;
+         }
+         else if(Gamer2Marvel.ToLower() == "no")
+         {
+             continue;
+         }
+         else{
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+         }
+     }
+     else if(Gamer1Mortal.ToLower()== "3")
+     {
+         Console.WriteLine("Are you sure you want to install Ghostrider V.25? yes or no?");
+         string Gamer2Ghost = Console.ReadLine();
+         if(Gamer2Ghost.ToLower() == "yes")
+         {
+            Console.WriteLine("");
+            Console.WriteLine("Installing... Please do not turn off device.");
+            top = false;
+         }
+         else if(Gamer2Ghost.ToLower() == "no")
+         {
+             continue;
+         }
+         else
+         {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action."); 
+         }
+         
+     }
+     else if(Gamer1Mortal == "0")
+     {
+        continue; 
+     }
+     else
+     {
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("Erorr. It restarted due to your inapproriate action."); 
+     }
+     
+    }
+    else if(Gamer1.ToUpper() == "RPG")
+    {
+        
+        Console.WriteLine("Selection of RPG Games");
+        Console.WriteLine("1. Final Fanstasy X");
+        Console.WriteLine("2. Elden ring");
+        Console.WriteLine("3. Dying Light 2");
+        Console.WriteLine("0. Back");
+     string Gamer2Fantasy = Console.ReadLine();
+     if(Gamer2Fantasy.ToLower() == "1")
+     {
+         Console.WriteLine("Are you sure you want to install Final Fantasy X? yes or no?");
+         string Gamer2Fantasy1 = Console.ReadLine();
+         if(Gamer2Fantasy1.ToLower() == "yes")
+         {
+            Console.WriteLine("");
+            Console.WriteLine("Installing... Please do not turn off device.");
+            top = false ;
+         }
+         else if(Gamer2Fantasy1 == "no")
+         {
+            continue; 
+         }
+         else
+         {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+         } 
+         
+         
+     }
+     else if(Gamer2Fantasy == "2")
+     {
+        Console.WriteLine("Are you sure you want to install Elden ring? yes or no?");
+        string Gamer2Elden = Console.ReadLine();
+        if(Gamer2Elden == "yes")
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Installing... Please do not turn off device.");
+            top = false;
+        }
+        else if(Gamer2Elden == "no")
+        {
+         continue;   
+        }
+        else{
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+        }
+     }
+     else if(Gamer2Fantasy == "3")
+     {
+        Console.WriteLine("Are you sure you want to install Dying Light 2? yes or no?");
+        string Gamer2Dying = Console.ReadLine();
+        if(Gamer2Dying == "yes")
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Installing... Please do not turn off device.");
+            top = false;
+        }
+        else if(Gamer2Dying == "no")
+        {
+            continue;
+        }
+        else
+        {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+        }
+        
+     }
+     else if(Gamer2Fantasy == "0")
+     {
+        continue; 
+     }
+    {
+        Console.WriteLine("Invalid command, select approriate keys.");
+    }
+    }
+    else if(Gamer1.ToLower() == ("shooting") )
+    {
+        
+        Console.WriteLine("Selection of Shooting Games");
+        Console.WriteLine("1. Red dead redemption 2");
+        Console.WriteLine("2. Halo");
+        Console.WriteLine("3. Call of duty:Warzone");
+        Console.WriteLine("0. Back");
+        string Gamer3Red = Console.ReadLine();
+        if(Gamer3Red == "1")
+        {
+            Console.WriteLine("Are you sure you want to install Red dead redemption 2? yes or no?");
+            string Gamer3Red1 = Console.ReadLine();
+            if(Gamer3Red1 == "yes")
+            {
+            Console.WriteLine("");
+            Console.WriteLine("Installing... Please do not turn off device.");
+            top = false;
+            }
+            else if(Gamer3Red1 == "no")
+            {
+                continue;
+            }
+            else
+            {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+            }
+        }
+        else if(Gamer3Red == "2")
+        {
+            Console.WriteLine("Are you sure you want to install Halo? yes or no?");
+            string Gamer3Halo = Console.ReadLine();
+            if(Gamer3Halo == "yes")
+            {
+             Console.WriteLine("");
+             Console.WriteLine("Installing... Please do not turn off device.");
+             top = false;
+            }
+            else if(Gamer3Halo == "no")
+            {
+                continue;
+            }
+            else
+            {
+             Console.WriteLine("");
+             Console.WriteLine("");
+             Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+            }
+        }
+        else if(Gamer3Red == "3")
+        {
+            Console.WriteLine("Are you sure you want to install Call of duty:Warzone? yes or no?");
+            string Gamer3Call = Console.ReadLine();
+            if(Gamer3Call == "yes")
+            {
+             Console.WriteLine("");
+             Console.WriteLine("Installing... Please do not turn off device.");
+             top = false;
+            }
+            else if(Gamer3Call == "no")
+            {
+                continue;
+            }
+            else
+            {
+             Console.WriteLine("");
+             Console.WriteLine("");
+             Console.WriteLine("Erorr. It restarted due to your inapproriate action.");
+            }
+            
+        }
+        else if(Gamer3Red == "0")
+        {
+            continue;
+        }
+        else
+        {
+            Console.WriteLine("Invalid command, select approriate keys.");
+        }
+        
+    }
+    else if(Gamer1 == "0")
+    {
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("Press run, to open the app again.");
+        top = false;
+    }
+    else 
+    {
+        Console.WriteLine("Invalid command, select approriate keys.");
+    }
+
+    
+    }
+    
+    
+  }
+}
+
