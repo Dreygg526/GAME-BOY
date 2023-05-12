@@ -126,7 +126,7 @@ class HelloWorld {
             Console.WriteLine("Installing... Please do not turn off device.");
             top = false ;
          }
-         else if(Gamer2Fantasy1 == "no")
+         else if(Gamer2Fantasy1.ToLower() == "no")
          {
             continue; 
          }
@@ -149,7 +149,7 @@ class HelloWorld {
             Console.WriteLine("Installing... Please do not turn off device.");
             top = false;
         }
-        else if(Gamer2Elden == "no")
+        else if(Gamer2Elden.ToLower() == "no")
         {
          continue;   
         }
@@ -163,13 +163,13 @@ class HelloWorld {
      {
         Console.WriteLine("Are you sure you want to install Dying Light 2? yes or no?");
         string Gamer2Dying = Console.ReadLine();
-        if(Gamer2Dying == "yes")
+        if(Gamer2Dying.ToLower() == "yes")
         {
             Console.WriteLine("");
             Console.WriteLine("Installing... Please do not turn off device.");
             top = false;
         }
-        else if(Gamer2Dying == "no")
+        else if(Gamer2Dying.ToLower() == "no")
         {
             continue;
         }
@@ -202,13 +202,13 @@ class HelloWorld {
         {
             Console.WriteLine("Are you sure you want to install Red dead redemption 2? yes or no?");
             string Gamer3Red1 = Console.ReadLine();
-            if(Gamer3Red1 == "yes")
+            if(Gamer3Red1.ToLower() == "yes")
             {
             Console.WriteLine("");
             Console.WriteLine("Installing... Please do not turn off device.");
             top = false;
             }
-            else if(Gamer3Red1 == "no")
+            else if(Gamer3Red1.ToLower() == "no")
             {
                 continue;
             }
@@ -223,13 +223,13 @@ class HelloWorld {
         {
             Console.WriteLine("Are you sure you want to install Halo? yes or no?");
             string Gamer3Halo = Console.ReadLine();
-            if(Gamer3Halo == "yes")
+            if(Gamer3Halo.ToLower() == "yes")
             {
              Console.WriteLine("");
              Console.WriteLine("Installing... Please do not turn off device.");
              top = false;
             }
-            else if(Gamer3Halo == "no")
+            else if(Gamer3Halo.ToLower() == "no")
             {
                 continue;
             }
@@ -244,13 +244,13 @@ class HelloWorld {
         {
             Console.WriteLine("Are you sure you want to install Call of duty:Warzone? yes or no?");
             string Gamer3Call = Console.ReadLine();
-            if(Gamer3Call == "yes")
+            if(Gamer3Call.ToLower() == "yes")
             {
              Console.WriteLine("");
              Console.WriteLine("Installing... Please do not turn off device.");
              top = false;
             }
-            else if(Gamer3Call == "no")
+            else if(Gamer3Call.ToLower() == "no")
             {
                 continue;
             }
@@ -290,4 +290,5 @@ class HelloWorld {
     
   }
 }
+
 
